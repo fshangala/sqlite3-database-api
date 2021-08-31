@@ -10,7 +10,7 @@ class Database:
 
         self.create_connection()
 
-    def create_connection(self, db_name: str = "id-maker.db")->dict:
+    def create_connection(self, db_name: str = "sqlite.db")->dict:
         response = self.response.copy()
         try:
             self.conn = sqlite3.connect(db_name)
